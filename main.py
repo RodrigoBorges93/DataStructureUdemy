@@ -1,18 +1,13 @@
-# O(1) or O of 1 or Constant Time is when we have an array of x elements, but we just take 1 single item in the array, no matter how many items there are in the array
+#What is the Big O of the below function? (Hint, you may want to go line by line)
 
-# Example:
+def funChallenge(input):
+  a = 10 # O(1)
+  a = 50 + 3 # O(1)
 
-items = ['item' for i in range(0,10000)]
+  for i in range(0,len(input)): # O(input)
+    anotherFunction() # O(input)
+    stranger = True # O(input)
+    a+=1 # O(input)
+  return a # O(1)
 
-def grabber(array):
-  print(array[0])
-
-grabber(items)
-
-# So, no matter how many items we add at the array, the function will always take the index 0 element, taking the same amout of time.
-
-def logFirstTwoItems(array):
-  print(array[0]) # O(1)
-  print(array[1]) # O(1)
-
-# O(1) is very scalable and in the Big-O Complexity Chart  it is rated as excelent just like O(log n)
+  # The Big O of this function is 3 + 4input or O(n)
