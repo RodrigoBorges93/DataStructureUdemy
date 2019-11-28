@@ -7,7 +7,7 @@
 from datetime import datetime
 
 
-teste = ['nemo' for i in range(0,10000)]
+test = ['nemo' for i in range(0,10000)]
 
 def findNemo(nemo):
   inicial = datetime.now()
@@ -18,5 +18,5 @@ def findNemo(nemo):
   print(datetime.now())
   
 
-findNemo(teste)
+findNemo(test)
 
