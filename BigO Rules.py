@@ -34,6 +34,18 @@ def printFirstItemThanHalfThanSayHello100Times(item):
 
 #Just like the function above, by removing the constants, we'll have oct
 
+def compressBoxesTwice(boxes, boxes2):
+  for box in boxes:
+    print(box)
+  
+  for box in boxes2:
+    print(box)
+
+# The result would be O(2n) but we have to remove the constants so we'd get O(n)
+
+
+# Rule number 3: Different terms for inputs
+
 def compressBoxesTwice(boxes):
   for box in boxes:
     print(box)
@@ -41,4 +53,4 @@ def compressBoxesTwice(boxes):
   for box in boxes:
     print(box)
 
-# The result would be O(2n) but we have to remove the constants so we'd get O(n)
+# The Big O is O(a + b) because there are 2 differents groups of items, so we could probably have differente sizes
